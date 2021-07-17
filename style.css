@@ -198,7 +198,7 @@ input:focus {
     display: flex;
     flex: 1 0 10%;
     align-items: center;
-    padding: 10px;
+    padding: 10px 10px 10px 13px;
     cursor: pointer;
     color: #E0E0E2;
 }
@@ -227,7 +227,7 @@ input:focus {
 .tab-name {
     position: relative;
     font-size: 16px; 
-    padding-left: 19px;
+    padding-left: 15px;
 }
 
 .tab-name p:nth-of-type(2) {
@@ -239,15 +239,32 @@ input:focus {
 .tab-name p:nth-of-type(2):before {
     content: '';
     position: absolute;
-    top: 17px;
+    top: 21px;
     bottom: 0;
-    left: 19px;
+    left: 15px;
     right: 0;
     background-image: url(seen.svg);
     background-repeat: no-repeat;
 
 }
 
+.photo-ic::before, .video-ic::before, .doc-ic::before { display: none!important; }
+
+.photo-ic::after, .video-ic::after, .doc-ic::after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    background-repeat: no-repeat;
+}
+
+.photo-ic::after { background-image: url(photo-ic.svg); }
+
+.video-ic::after { background-image: url(video-ic.svg); }
+
+.doc-ic::after { background-image: url(doc-ic.svg); }
 
 .tab-time {
     margin-left: auto;
