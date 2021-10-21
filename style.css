@@ -197,6 +197,15 @@ input:focus {
     scrollbar-width: thin;
 }
 
+.side-pane::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+
+.side-pane::-webkit-scrollbar-thumb {
+    background-color: hsla(0,0%,100%,.16);
+}
+
 .tab {
     position: relative;
     display: flex;
@@ -295,6 +304,15 @@ input:focus {
     scrollbar-width: thin;
     color: #E0E0E2;
     padding: 4% 9%;
+}
+
+.msg-body::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+}
+
+.msg-body::-webkit-scrollbar-thumb {
+    background: hsla(0,0%,100%,.16);
 }
 
 .msg-body .sent {
