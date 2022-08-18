@@ -35,7 +35,7 @@ p {
 
 .main-container {
     position: relative;
-    width: 1396px;
+    max-width: 1396px;
     height: calc(100% - 38px);
     top: 19px;
     margin: 0 auto;
